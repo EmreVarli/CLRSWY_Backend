@@ -1,0 +1,94 @@
+body {
+    background-color: #eee;
+}
+
+#main-content {
+    background-color: #ffffff;
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+.auto-width {
+    width: auto;
+    height: auto;
+    background-color: cyan;
+    /* border: 30px solid black; */
+    /* margin: 10px; */
+
+
+}
+
+.length-width {
+    width: 50px;
+    height: 50px;
+    background-color:blanchedalmond;
+    /* outline: 10px dashed red; */
+    
+}
+
+.percentage-width{
+    width: 70%;
+    height: 10%;
+    background-color: violet;
+}
+
+.initial-width {
+    width: initial;
+    height: initial;
+    background-color: lightcoral;
+}
+
+/* .inherit-width {
+    width: inherit;
+    height: inherit;
+    background-color: lightseagreen;
+} */
+
+.max-width {
+    max-width: 450px;
+    min-width: 350px;
+    background-color:red;
+    margin: 10px auto;
+}
+
+.max-height {
+    max-height: 200px;
+    /* min-height: 150px; */
+    max-width: 200px;
+    background-color: mediumslateblue;
+    /* overflow: auto; */
+}
+
+
+
+/* FOR OUTLINE SUBJECT  */
+
+.outline-1 {
+    width: auto;
+    height: auto;
+    background-color: cyan;
+    border: 10px solid black;
+    margin: 70px;
+    outline: 15px dashed red;
+    outline-offset: 20px;
+
+}
+
+.outline-2 {
+    width: 50px;
+    height: auto;
+    background-color:blanchedalmond;
+    border: 10px solid black;
+    outline: 10px dashed blue;
+    outline-offset: 15px;
+    margin: 50px;
+}
+
+.outline-2:hover {
+    outline: 10px dashed green;
+    outline-offset: 15px;
+
+}

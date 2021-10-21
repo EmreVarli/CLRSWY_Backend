@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Difference</title>
+    </head>
+    <body>
+        <p>
+            So, a big difference is that HTMLCollection contains only
+            HTMLElements but NodeList also contains the comments, white-space
+            texts (carriage return chars, spaces..), etc.
+        </p>
+        <div>para 1</div>
+        <div>para 2</div>
+        <script>
+            function printList(x, title) {
+                console.log(
+                    "\r\nprinting " + title + " (length=" + x.length + "):",
+                );
+                for (let i = 0; i < x.length; i++) {
+                    console.log("  " + i + ":" + x[i]);
+                }
+            }
+
+            const elems = document.body.children; //HTMLCollection
+            const nodes = document.body.childNodes; //NodeList
+
+            printList(elems, "children [HTMLCollection]");
+            printList(nodes, "childNodes [NodeList]");
+        </script>
+    </body>
+</html>

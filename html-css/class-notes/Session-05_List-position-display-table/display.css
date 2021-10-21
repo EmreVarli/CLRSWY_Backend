@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#div-1 {
+    display: block;
+    background-color: red;
+    width: 400px;
+    height: 200px;
+}
+
+#span-1 {
+    /* display: none; */
+    visibility: hidden;
+    background-color: blue;
+    
+}
+#span-2 {
+    background-color: pink;
+}
+#div-2 {
+    background-color: green;
+}
+img {
+    width: 50px;
+    height: 50px;
+}

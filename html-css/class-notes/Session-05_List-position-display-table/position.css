@@ -1,0 +1,37 @@
+.box {
+    width: 120px;
+    height: 120px;
+}
+
+#first {
+    background-color: red;
+}
+
+#second {
+    background-color: green;
+    position: relative;
+    /* top: 50px;
+    left: 30px; */
+}
+
+#third {
+    background-color: blue;
+    position: sticky;
+    top: 30px;
+    left: 30px;
+}
+
+#mbox {
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#div-4 {
+    width: 200px;
+    height: 1000px;
+    background-color: gold;
+}

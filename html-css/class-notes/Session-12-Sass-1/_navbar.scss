@@ -1,0 +1,34 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: $myNavColor;
+    .brand{
+
+        img{
+            width: 80px;
+            border:$myBorder;
+            border-radius: 30%;
+            padding:10px;
+            margin:10px;
+        }
+    }
+    .navbar{
+        margin:10px;
+        ul{
+            list-style-type: none;
+            display: flex;
+            li{
+                a{
+                   text-decoration: none;
+                   padding:5px;
+                   color:black;
+                   font-size: $myLinkSize;
+                }
+                input{
+                    width: 60px;
+                    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action=""></form>
+
+    <form action="result.html" method="GET" name="myform">
+      <div>
+        <label for="cars">Choose a car : </label>
+        <br />
+        <select name="cars" id="cars" multiple size="3">
+          <option value="Porche">Porche</option>
+          <option value="Masserati" selected>Masserati</option>
+          <option value="BMW">BMW</option>
+          <option value="Tesla">Tesla</option>
+        </select>
+
+        <!--  size="3"      required   disabled -->
+
+        <!-- <optgroup label="Expensive cars">
+
+                     </optgroup>
+
+                     <optgroup label="Other cars">
+
+                     </optgroup>
+                -->
+      </div>
+      <br />
+
+      <div>
+        <label for="message">Enter your comment here : </label>
+        <br />
+        <textarea
+          name="comment"
+          id="message"
+          cols="20"
+          rows="15"
+          placeholder="Write sth buddy."
+          maxlength="50"
+        ></textarea>
+        <!-- cols rows yerine   style="width:200px, height:200px"  style="resize: none;" alanı sabitlemek için -->
+        <!--   placeholder="Write sth buddy." maxlength="50"    en son yaz -->
+        <!--  SHOW RESIZE AT SERVER 
+                    style="resize : none"      -->
+      </div>
+
+      <div>
+        <label for="browser">Browsers : </label>
+        <input type="text" list="browsers" name="options" id="browser" />
+        <datalist id="browsers">
+          <option value="Firefox"></option>
+          <option value="Chrome"></option>
+          <option value="Safari"></option>
+          <option value="Opera"></option>
+          <option value="IE"></option>
+        </datalist>
+      </div>
+
+      <br />
+
+      <div>
+        <!--  value and placeholder at LAST    ASK   -->
+
+        <!-- add   "required"    so  value is not useful for this.      -->
+
+        <fieldset>
+          <legend>Personel Info</legend>
+          <label for="fname">First Name</label> <br />
+          <input type="text" name="fname" id="fname" value="Ethan" /> <br />
+          <label for="lname">Last Name</label> <br />
+          <input type="text" name="lname" id="lname" placeholder="Specter" />
+        </fieldset>
+      </div>
+      <br />
+      <input type="submit" value="Send" />
+      <br />
+    </form>
+  </body>
+</html>

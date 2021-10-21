@@ -1,0 +1,71 @@
+@import "variables","navbar","slider", "mixin","extend";
+
+.container{
+    margin:0 auto;
+    width: 80%;
+    background-color: burlywood;
+}
+
+// ----- IF STATEMENT----------
+$test:2;
+.footer{
+
+    @if $test>3{
+        background-color: brown;
+    }@else if $test<3{
+        background-color: darkcyan;
+    }@else if $test==3{
+        background-color: darkred;
+    }
+}
+
+// ---- FOR LOOP------------
+// .socialBoxes{
+//     display: flex;
+
+//     // @for $i from 1 through 6 {
+//     //     .social#{$i}{
+//     //         width: 10%;
+//     //         height: 20px + ($i+6);
+//     //         background-color: #456 + ($i*20);
+//     //     }
+//     // }
+// // ----WHILE LOOP-------
+
+// // $count:1;
+// // @while $count<7 {
+// //     .social#{$count}{
+// //         width: 10%;
+// //         height: 20px ;
+// //         background-color: #456 ;
+// //     }
+// //     $count:$count+1;
+// // }
+
+// }
+
+// -----EACH LOOP-------
+
+$themeColor:(
+    "pink":rgb(228, 130, 231),
+    "red":rgb(255,00,00),
+    "orange":rgb(185,142,63),
+);
+
+@each $i,$color in $themeColor{
+    .container{
+        &.#{$i}{
+            background-color: $color;
+        }
+    }
+}
+
+// --------ARRAY-----------
+
+$olive:#004356,#990000,#005500,#456789,#121456,#145e13,#546773;
+
+@for $i from 1 to length($olive){
+    .social#{$i}{
+        background-color: nth($olive,$i);
+    }
+}

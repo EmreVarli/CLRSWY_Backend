@@ -1,0 +1,21 @@
+
+.slider{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #cc6699;
+    .left{
+        margin-top:20px;
+        button{
+            border:none;
+            padding:10px;
+            border-radius:10px;
+            margin: 10px;
+            background-color: $myNavColor;
+            font-size: $myLinkSize;
+            border:2px solid gray;
+        }
+    }
+    img{
+        width: 30%;
+    }
+}

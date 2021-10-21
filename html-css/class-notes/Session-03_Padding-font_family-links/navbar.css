@@ -1,0 +1,17 @@
+.header{
+    background-color: black;
+    height: 60px;
+    padding:20px 10px;
+}
+
+.header a{
+float:left;
+color:white;
+text-decoration:none;
+padding:10px;
+font-size: 15px;
+font-family:Georgia, 'Times New Roman', Times, serif
+}
+.header-right{
+    float:right;
+}

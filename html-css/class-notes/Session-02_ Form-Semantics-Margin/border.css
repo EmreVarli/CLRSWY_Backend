@@ -1,0 +1,28 @@
+#part-1 {
+    border-style: solid;
+    border-width: 10px;
+    border-color: red;
+}
+
+#part-2 {
+    border-top-style: dashed;
+    border-width: 10px;
+    border-color: #00FF00;
+}
+
+#part-3 {
+    border-right-style:double;
+    border-width: 10px;
+    border-color: rgb(0, 0, 255);
+}
+
+#part-4 {
+    border: 5px solid rgba(255, 0, 0, 0.5)
+}
+
+#part-5 {
+    border-style: solid groove;
+    border-width: 10px 5px;
+    border-color: #f00 blue ;
+    border-radius: 10px;
+}

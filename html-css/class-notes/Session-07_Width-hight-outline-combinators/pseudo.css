@@ -1,0 +1,31 @@
+a:link {
+    color: red;
+}
+
+
+
+a:visited {
+    color:gray;
+}
+
+a:hover {
+    color: mediumspringgreen;
+    cursor: progress;
+}
+
+a {
+    margin: 40px;
+    outline: 5px solid blue;
+    transition: all ease-in-out 300ms;
+}
+
+/* p {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}  */
+
+div:hover + p {
+    display: block;
+
+}
